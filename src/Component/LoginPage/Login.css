@@ -6,13 +6,18 @@
 /* loginimg */
 .backgroundlogin {
   position: relative;
+  width: 55%;
 }
 .imagelogin1 {
   height: 100%;
+  width: 100%;
 }
 .backgroundtext {
-  padding-top: 10%;
-  padding-left: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
   color: var(--C-4, #fff);
   text-align: center;
   font-family: "Open Sans";
@@ -21,29 +26,30 @@
   font-weight: 700;
   line-height: normal;
   position: absolute;
-  width: 75%;
+  width: 100%;
 }
 /* logininput */
 .logininput {
+  margin: 10px 0 0 20px;
   padding: 7% 0px 0 8%;
+  width: 45%;
 }
 .loginlogo {
-  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 30%;
+  /* padding-right: 30%; */
 }
 .mylogo1 {
   width: 356px;
-  height: 55.241px;
+  height: 50px;
   flex-shrink: 0;
 }
 span {
   padding-left: 6%;
   padding-top: 4%;
   color: var(--Yellow-Color, #00394d);
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -52,7 +58,7 @@ span {
 }
 .divteg1 {
   color: var(--Yellow-Color, #00394d);
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -61,7 +67,7 @@ span {
 }
 .divteg2 {
   color: #6a6a6a;
-  font-family:"Open Sans";
+  font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -80,15 +86,19 @@ span {
 }
 .step3 {
   padding-top: 8%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 70%;
   /* background-color: #dc4326; */
 }
+.serviceprovide {
+  display: flex;
+  gap: 15px;
+}
 .forget {
-    text-decoration: none;
+  text-decoration: none;
   color: #949494;
   font-family: "Open Sans";
   font-size: 14px;
@@ -101,6 +111,7 @@ span {
   background-color: #dc4326;
   border-radius: 8px;
   background: var(--Blue-Color, #dc4326);
+  border: none;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
   display: flex;
   width: 267px;
@@ -111,13 +122,13 @@ span {
   gap: 10px;
   flex-shrink: 0;
   /* margin-bottom: 5%; */
-  color: #FFF;
-text-align: center;
-font-family: Open Sans;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 22px; /* 122.222% */
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 122.222% */
 }
 .haveaccount {
   color: #969696;
@@ -144,4 +155,30 @@ line-height: 22px; /* 122.222% */
   color: #dc4326;
   /* margin-top: 50px; */
 }
-/*  */
+@media (max-width: 900px) {
+  .mainLogin1 {
+    display: block;
+  }
+  .backgroundlogin {
+    width: 100%;
+  }
+
+  .logininput {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputtypemain {
+    padding-top: 3%;
+    width: 100%;
+  }
+  .serviceprovide {
+    gap: 0px;
+    justify-content: space-around;
+  }
+}
