@@ -43,40 +43,105 @@ span {
   padding-left: 6%;
   padding-top: 4%;
   color: var(--Yellow-Color, #00394d);
-  font-family: Open Sans;
+  font-family:"Open Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.32px;
 }
-.divteg1{
-    color: var(--Yellow-Color, #00394D);
-font-family: Open Sans;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding-top: 10%;
+.divteg1 {
+  color: var(--Yellow-Color, #00394d);
+  font-family:"Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 10%;
 }
-.divteg2{
-    color: #6A6A6A;
+.divteg2 {
+  color: #6a6a6a;
+  font-family:"Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.inputtypemain {
+  padding-top: 3%;
+  width: 70%;
+}
+.vl {
+  border-right: 2px solid#DFDFDF;
+  padding-left: 8px;
+  width: 3px;
+  height: 20px;
+}
+.step3 {
+  padding-top: 8%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  /* background-color: #dc4326; */
+}
+.forget {
+    text-decoration: none;
+  color: #949494;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+}
+.buttoncs {
+  /* margin-left: 14%; */
+  background-color: #dc4326;
+  border-radius: 8px;
+  background: var(--Blue-Color, #dc4326);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  display: flex;
+  width: 267px;
+  height: 55px;
+  padding: 10px 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  /* margin-bottom: 5%; */
+  color: #FFF;
+text-align: center;
 font-family: Open Sans;
 font-size: 18px;
 font-style: normal;
-font-weight: 500;
-line-height: normal;
+font-weight: 700;
+line-height: 22px; /* 122.222% */
 }
-
-.inputtypemain{
-    padding-top: 3%;
- width: 70%;
+.haveaccount {
+  color: #969696;
+  /* text-align: center; */
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0px;
+  line-height: 22px; /* 157.143% */
+  /* padding-left: 15%; */
 }
-.vl {
-    border-right: 2px solid#DFDFDF;
-    padding-left: 8px;
-    width: 3px;
-height: 20px;
-} 
-  /*  */
-
+.create {
+  color: #dc4326;
+  margin-left: 10px;
+  text-decoration: none;
+  /* padding-top: 10%; */
+}
+.logingest {
+  text-decoration: none;
+  /* margin-left: 5%; */
+}
+.loginas {
+  color: #dc4326;
+  /* margin-top: 50px; */
+}
+/*  */
