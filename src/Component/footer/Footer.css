@@ -1,0 +1,32 @@
+.footerbackground{
+    background: var(--Yellow-Color, #00394D);
+    width: 100%;
+height: 454px;
+flex-shrink: 0;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+padding-top: 50px;
+    color: #FFF;
+text-align: center;
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+opacity: 0.8;
+}
+.textdecription{
+    width: 50%;
+    padding-top: 1%;
+}
+
+.qrtext{
+    padding-top: 3%;
+}
+.qrlogo{
+    padding-top: 7%;
+}

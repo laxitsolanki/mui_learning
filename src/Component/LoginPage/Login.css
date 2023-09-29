@@ -1,0 +1,82 @@
+/* mainlogin */
+.mainLogin1 {
+  display: flex;
+  width: 100%;
+}
+/* loginimg */
+.backgroundlogin {
+  position: relative;
+}
+.imagelogin1 {
+  height: 100%;
+}
+.backgroundtext {
+  padding-top: 10%;
+  padding-left: 5%;
+  color: var(--C-4, #fff);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  width: 75%;
+}
+/* logininput */
+.logininput {
+  padding: 7% 0px 0 8%;
+}
+.loginlogo {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30%;
+}
+.mylogo1 {
+  width: 356px;
+  height: 55.241px;
+  flex-shrink: 0;
+}
+span {
+  padding-left: 6%;
+  padding-top: 4%;
+  color: var(--Yellow-Color, #00394d);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.divteg1{
+    color: var(--Yellow-Color, #00394D);
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 10%;
+}
+.divteg2{
+    color: #6A6A6A;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.inputtypemain{
+    padding-top: 3%;
+ width: 70%;
+}
+.vl {
+    border-right: 2px solid#DFDFDF;
+    padding-left: 8px;
+    width: 3px;
+height: 20px;
+} 
+  /*  */
+
