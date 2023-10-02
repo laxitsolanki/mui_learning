@@ -34,7 +34,7 @@ const Login = () => {
           </div>
           <img src={login1} alt="login1" className="imagelogin1" />
         </div>
-
+{/* step-2 input */}
         <div className="logininput">
           {/* logo and span 3 */}
           <div className="loginlogo">
@@ -51,29 +51,7 @@ const Login = () => {
             <div className="divteg2">
               Please login your account to continue.
             </div>
-            {/* <form action="">
-              <img src={mesg} alt="" />
-              <span class="vl"></span>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="inputtypemain"
-                placeholder="Email address"
-              />
-              <br />
-              <img src={look} alt="" />
-              <span class="vl"></span>
-              <input
-                type="password"
-                id="pwd"
-                name="pwd"
-                minlength="8"
-                className="inputtypemain"
-                placeholder="Password"
-              />
-              <img src={hide} alt="" />
-            </form> */}
+          
             <Box sx={{ "& > :not(style)": { mt: 3 } }}>
               <TextField
                 className="inputtypemain"
@@ -126,7 +104,7 @@ const Login = () => {
             <button className="buttoncs">Log in</button>
             <div style={{ display: "flex", marginTop: "20px" }}>
               <span className="haveaccount">Don’t have an Account?</span>
-              <Link to="/Buyear" className="create">
+              <Link to="/mainbuyer" className="create">
                 create account
               </Link>
             </div>

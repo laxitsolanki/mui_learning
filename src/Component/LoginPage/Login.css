@@ -56,23 +56,7 @@ span {
   line-height: normal;
   letter-spacing: 0.32px;
 }
-.divteg1 {
-  color: var(--Yellow-Color, #00394d);
-  font-family: "Open Sans";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-top: 10%;
-}
-.divteg2 {
-  color: #6a6a6a;
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
+
 
 .inputtypemain {
   padding-top: 3%;
@@ -107,6 +91,7 @@ span {
   line-height: 22px; /* 157.143% */
 }
 .buttoncs {
+  cursor: pointer;
   /* margin-left: 14%; */
   background-color: #dc4326;
   border-radius: 8px;
@@ -131,6 +116,7 @@ span {
   line-height: 22px; /* 122.222% */
 }
 .haveaccount {
+  cursor: pointer;
   color: #969696;
   /* text-align: center; */
   font-family: "Open Sans";
@@ -145,6 +131,8 @@ span {
   color: #dc4326;
   margin-left: 10px;
   text-decoration: none;
+  cursor: pointer;
+
   /* padding-top: 10%; */
 }
 .logingest {

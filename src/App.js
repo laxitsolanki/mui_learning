@@ -1,9 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mainlogin from './Component/LoginPage/Mainlogin';
+import Mainbuyer from './Component/BuyerPage/Mainbuyer';
 
-  // import Header from './Component/Header/Header'
-  // import Footer from './Component/footer/Footer'
 
 const App = () => {
   return (
@@ -13,6 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={< Mainlogin/>} />
+          <Route path="/mainbuyer" element={< Mainbuyer/>} />
         </Routes>
       </BrowserRouter>
     </div>
