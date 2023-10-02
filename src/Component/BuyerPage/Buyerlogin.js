@@ -77,20 +77,18 @@ const Buyerlogin = () => {
             </div>
             <div className="mainradio-button">
               <FormControl>
-                <RadioGroup   style={{ width: "70%" }}
+                <RadioGroup   
                   row
                   aria-labelledby="demo-row-radio-buttons-group-label"
                   name="row-radio-buttons-group"
                 >
                   <FormControlLabel
-                    // style={{ width: "70%" }}
                     value="buyer"
                     control={<Radio />}
                     label="buyer"
                     className="buyer-radio-buttons"
                   />
                   <FormControlLabel
-                    // style={{ width: "70%" }}
                     value="seller"
                     control={<Radio />}
                     label="seller"
