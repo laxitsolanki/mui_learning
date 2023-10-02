@@ -77,18 +77,20 @@ const Buyerlogin = () => {
             </div>
             <div className="mainradio-button">
               <FormControl>
-                <RadioGroup
+                <RadioGroup   style={{ width: "70%" }}
                   row
                   aria-labelledby="demo-row-radio-buttons-group-label"
                   name="row-radio-buttons-group"
                 >
                   <FormControlLabel
+                    // style={{ width: "70%" }}
                     value="buyer"
                     control={<Radio />}
                     label="buyer"
                     className="buyer-radio-buttons"
                   />
                   <FormControlLabel
+                    // style={{ width: "70%" }}
                     value="seller"
                     control={<Radio />}
                     label="seller"
@@ -105,7 +107,7 @@ const Buyerlogin = () => {
               <div className="buyerbussinesinput-type">
                 <Box sx={{ "& > :not(style)": { mt: 3 } }}>
                   <TextField
-                   style={{ width: "70%" }}
+                    style={{ width: "70%" }}
                     className="inputtypemain"
                     id="input-with-icon-textfield"
                     placeholder="Email address"
@@ -195,6 +197,7 @@ const Buyerlogin = () => {
               <div className="buyerpersonal">Personal Details</div>
               <Box sx={{ "& > :not(style)": { mt: 3 } }}>
                 <TextField
+                  style={{ width: "70%" }}
                   className="inputtypemain"
                   id="input-with-icon-textfield"
                   placeholder="frist name"
@@ -209,7 +212,7 @@ const Buyerlogin = () => {
                   variant="standard"
                 />
                 <TextField
-                 style={{ width: "70%" }}
+                  style={{ width: "70%" }}
                   className="inputtypemain"
                   id="input-with-icon-textfield"
                   placeholder="last name"
@@ -223,64 +226,76 @@ const Buyerlogin = () => {
                   }}
                   variant="standard"
                 />
-              </Box>
-              <div className="inputnumber-main">
-                <img src={call} alt="" className="iconphone" />
-                <span className="line-input"></span>
-                <input
-                  list="phone"
-                  name="phone"
-                  className="inputnumber"
-                  placeholder="91+"
-                  required=""
-                  pattern="[0-9]{10}"
-                />
-                <br />
-                <datalist id="phone">
-                  <option value="91+"></option>
-                  <option value="92+"></option>
-                  <option value="93+"></option>
-                  <option value="94+"></option>
-                  <option value="85+"></option>
-                </datalist>
-                <input
-                  type="phone"
-                  className="number"
-                  placeholder="Mobile number"
-                />
-                <br />
-              </div>
-              <TextField  style={{ width: "70%" }}
-                  className="inputtypemain"
-                  id="input-with-icon-textfield"
-                  placeholder="Address 1"
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <img src={Location} alt="msg"></img>
-                        <span className="line-input"></span>
-                      </InputAdornment>
-                    ),
-                  }}
-                  variant="standard"
-                />
-                 <TextField style={{marginTop: "10px"}}
-                  className="inputtypemain"
-                  id="input-with-icon-textfield"
-                  placeholder="Address 2"
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <img src={Location} alt="msg"></img>
-                        <span className="line-input"></span>
-                      </InputAdornment>
-                    ),
-                  }}
-                  variant="standard"
-                />
-                <Box sx={{ "& > :not(style)": { mt: 3 } }}>
                 <TextField
-                 style={{ width: "70%" }}
+                  style={{ width: "70%" }}
+                className="inputtypemain"
+                id="input-with-icon-textfield"
+                placeholder="Mobile number"
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <img src={call} alt="call" />
+                      <span className="line-input"></span>
+                      <div className="inputnumber-main">
+                        <input
+                          style={{ width: "70%" }}
+                          list="phone"
+                          name="phone"
+                          className="inputnumber"
+                          placeholder="91+"
+                          required=""
+                          pattern="[0-9]{10}"
+                        />
+                        <br />
+                        <datalist id="phone">
+                          <option value="91+"></option>
+                          <option value="92+"></option>
+                          <option value="93+"></option>
+                          <option value="94+"></option>
+                          <option value="85+"></option>
+                        </datalist>
+                      </div>
+                    </InputAdornment>
+                  ),
+                }}
+                variant="standard"
+              />
+              </Box>
+              
+
+              <TextField
+                style={{ width: "70%" }}
+                className="inputtypemain"
+                id="input-with-icon-textfield"
+                placeholder="Address 1"
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <img src={Location} alt="msg"></img>
+                      <span className="line-input"></span>
+                    </InputAdornment>
+                  ),
+                }}
+                variant="standard"
+              />
+              <TextField
+                style={{ marginTop: "10px",width: "70%" }}
+                className="inputtypemain"
+                id="input-with-icon-textfield"
+                placeholder="Address 2"
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <img src={Location} alt="msg"></img>
+                      <span className="line-input"></span>
+                    </InputAdornment>
+                  ),
+                }}
+                variant="standard"
+              />
+              <Box sx={{ "& > :not(style)": { mt: 3 } }}>
+                <TextField
+                  style={{ width: "70%" }}
                   className="inputtypemain"
                   id="input-with-icon-textfield"
                   placeholder="City/Town"
@@ -294,61 +309,62 @@ const Buyerlogin = () => {
                   }}
                   variant="standard"
                 />
-                   <div>
-                    <TextField
-                      style={{ width: "70%" }}
-                      id="standard-select-currency-native"
-                      select
-                      // label="Native select"
-                      placeholder="State"
-                      defaultValue=""
-                      className="inputtextfield-business"
-                      SelectProps={{
-                        native: true,
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <img src={Vector} alt="msg"></img>
-                            <span className="line-input"></span>
-                          </InputAdornment>
-                        ),
-                      }}
-                      variant="standard"
-                    >
-                      {currencies.map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </TextField>
-                  </div>
-                  <div>
-                    <TextField 
-                      style={{ width: "70%" }}
-                      id="standard-select-currency-native"
-                      select
-                      // label="Native select"
-                      placeholder="Country"
-                      defaultValue=""
-                      className="inputtextfield-business"
-                      SelectProps={{
-                        native: true,
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <img src={www} alt="msg"></img>
-                            <span className="line-input"></span>
-                          </InputAdornment>
-                        ),
-                      }}
-                      variant="standard"
-                    >
-                      {currencies.map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </TextField>
-                  </div>
-                  <TextField  style={{ width: "70%" }}
+                <div>
+                  <TextField
+                    style={{ width: "70%" }}
+                    id="standard-select-currency-native"
+                    select
+                    // label="Native select"
+                    placeholder="State"
+                    defaultValue=""
+                    className="inputtextfield-business"
+                    SelectProps={{
+                      native: true,
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={Vector} alt="msg"></img>
+                          <span className="line-input"></span>
+                        </InputAdornment>
+                      ),
+                    }}
+                    variant="standard"
+                  >
+                    {currencies.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </TextField>
+                </div>
+                <div>
+                  <TextField
+                    style={{ width: "70%" }}
+                    id="standard-select-currency-native"
+                    select
+                    // label="Native select"
+                    placeholder="Country"
+                    defaultValue=""
+                    className="inputtextfield-business"
+                    SelectProps={{
+                      native: true,
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={www} alt="msg"></img>
+                          <span className="line-input"></span>
+                        </InputAdornment>
+                      ),
+                    }}
+                    variant="standard"
+                  >
+                    {currencies.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </TextField>
+                </div>
+                <TextField
+                  style={{ width: "70%" }}
                   className="inputtypemain"
                   id="input-with-icon-textfield"
                   placeholder="Postcode/Zip"
@@ -368,13 +384,15 @@ const Buyerlogin = () => {
 
           <div>
             <div className="buttonbuyer">
-            <button className="buttoncs">Next</button>
-            <span className="loginasbuyer">
-              <a href="#" className="logingestbuyer">
-              Already have an Account?
-              </a>
-              Login
-            </span>
+              <button className="buttoncs">Next</button>
+              <div>
+              <span className="loginasbuyer">
+                <a href="#" className="logingestbuyer">
+                  Already have an Account?
+                </a>
+                Login
+              </span>
+              </div>
             </div>
           </div>
         </div>

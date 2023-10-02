@@ -118,7 +118,6 @@ line-height: 22px; /* 137.5% */
 }
 .inputnumber-main{
   display: flex;
-  gap: 10px;
   outline: none;
 }
 .iconphone{
@@ -126,13 +125,15 @@ line-height: 22px; /* 137.5% */
   padding-top: 15px;
 }
 .inputnumber{
-  padding: 12px 20px;
-  margin: 8px 0;
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid#DFDFDF;
-  width: 80px;
+  width: 45px;
   outline: none;
+  /* background-color: green; */
+  border: none;
 }
 .number{
   padding: 12px 20px;
@@ -188,4 +189,30 @@ line-height: 22px; /* 137.5% */
 .loginasbuyer {
   color: #dc4326;
   /* margin-top: 50px; */
+}
+@media (max-width: 900px) {
+  .mainbuyer {
+    display: block;
+  }
+  .buyerimage {
+    width: 100%;
+  }
+  .maindivstep-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buyer-radio-buttons{
+    width: 213px;
+    height: 48px;
+  }
+  .seller-radio-buttons{
+    width: 213px;
+    height: 48px;
+  }
+  .buttonbuyer{
+margin-right: 130px;
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../footer/Footer.css";
 import logo from "../../Asest/image 8.png";
 import qr from "../../Asest/image 1.png";
-
+import app from "../../Asest/app.png";
 const Footer = () => {
   return (
     <div>
@@ -24,6 +24,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer2">
+      <span className="footerfollow">Follow us</span> 
+      <img src={app} alt="myapp" className="footerapp" />
+      <span className="footer2021">2021 Bigtrader.biz . All rights reserved.</span>
       </div>
     </div>
   );

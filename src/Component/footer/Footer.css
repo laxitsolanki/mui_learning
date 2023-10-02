@@ -30,3 +30,61 @@ opacity: 0.8;
 .qrlogo{
     padding-top: 7%;
 }
+.footer2{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+height: 50px;
+flex-shrink: 0;
+    background-color: #003244;
+  }
+  .footerapp{
+    top: 8px;
+    padding-left: 20px;
+  }
+  .footerfollow{
+    padding-left: 40px;
+    color: #FFF;
+text-align: center;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+  .footer2021{
+    color: #FFF;
+text-align: center;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-items: flex-end;
+justify-content: flex-end;
+display:flex;
+  }
+  @media (max-width: 900px) {
+
+    .footer2{
+        display: flex;
+    width: 100%;
+      }
+      .footerfollow{
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+       .footerapp{
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+        width: 10%;
+        height: 40%;
+      }
+      .footer2021{
+        align-items: flex-end;
+        justify-content: flex-end;
+        display:flex;
+      }
+  }

@@ -46,8 +46,8 @@
   flex-shrink: 0;
 }
 span {
-  padding-left: 6%;
-  padding-top: 4%;
+  /* padding-left: 6%; */
+  /* padding-top: 4%; */
   color: var(--Yellow-Color, #00394d);
   font-family: "Open Sans";
   font-size: 16px;
@@ -143,6 +143,7 @@ span {
   color: #dc4326;
   /* margin-top: 50px; */
 }
+
 @media (max-width: 900px) {
   .mainLogin1 {
     display: block;
