@@ -19,6 +19,8 @@ import FormControl from "@mui/material/FormControl";
 import Box from "@mui/material/Box";
 import InputAdornment from "@mui/material/InputAdornment";
 import TextField from "@mui/material/TextField";
+import { Link } from "react-router-dom";
+
 
 const Buyerlogin = () => {
   const currencies = [
@@ -382,7 +384,9 @@ const Buyerlogin = () => {
 
           <div>
             <div className="buttonbuyer">
+            <Link to="/mainbuyer1" target="_blank">
               <button className="buttoncs">Next</button>
+              </Link>
               <div>
               <span className="loginasbuyer">
                 <a href="#" className="logingestbuyer">

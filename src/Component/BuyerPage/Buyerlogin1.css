@@ -1,0 +1,99 @@
+.mainbuyer2{
+    display: flex;
+    width: 100%;
+  }
+  /* loginimg */
+  .backgroundlogin2 {
+    position: relative;
+    width: 55%;
+  }
+  .imagelogin2 {
+    height: 100%;
+    width: 100%;
+  }
+  .backgroundtext2 {
+  padding-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--C-4, #fff);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .mainbuyerstep2 {
+    display: block;
+    margin: 15px 0 0 10px;
+    padding: 7% 0px 0 3%;
+    width: 45%;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .mainlogostep-1 {
+    padding-left: 8%;
+  }
+  .buyer-serviceprovide2 {
+    display: flex;
+    gap: 15px;
+  }
+  .buyer-divteg2 {
+    color: var(--Yellow-Color, #00394d);
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 3%;
+    padding-right: 42;
+  }
+  .buyer-divteg12 {
+    color: #6a6a6a;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .mainradio-button2{
+    padding-top: 4%;
+
+  }
+  .buyer-radio-buttons2{
+    border-radius: 15px;
+    border: 1px solid #dc4326;
+    background: #f3e4e1;
+    width: 213px;
+    height: 48px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05);
+  }
+  .seller-radio-buttons2 {
+    width: 213px;
+    height: 48px;
+    border-radius: 15px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+  }
+  .buyerbussinessname-input2{
+    padding-top: 2%;
+    color: var(--Yellow-Color, #00394D);
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px; /* 137.5% */
+}
+.line-input2 {
+  border-right: 2px solid#DFDFDF;
+  padding-left: 8px;
+  width: 3px;
+  height: 20px;
+}
