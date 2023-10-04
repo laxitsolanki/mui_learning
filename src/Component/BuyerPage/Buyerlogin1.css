@@ -97,3 +97,61 @@ line-height: 22px; /* 137.5% */
   width: 3px;
   height: 20px;
 }
+.mybussiness{
+  padding-top: 3%;
+  color: #000;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.choseop{
+  overflow-y: 957px;
+  overflow-x: 832px;
+}
+.clickable-image{
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D9D9D9;
+  width: 436px;
+  height: 160px;
+  border: #F8F8F8;
+  border-radius: 7%;
+  border-style: dashed;
+  }
+  .already1{
+    padding-left: 2%;
+}
+.buttonbuyer{
+  background-color: #DC4326;
+  width: 267px;
+  height: 55px;
+  border-radius: 5%;
+  margin-top: 7%;
+  margin-right: 14%;
+  font-size: larger;
+  color: #fff;
+}
+.ittakesbuyer{
+  padding-top: 3%;
+  color:#00394D;
+  padding-left: 13%;
+  overflow-y: 1586px;
+  overflow-x: 905px;
+  margin-bottom: 8%;
+}
+.alreadybuyer{
+  margin-left: 1%;
+}
+.loginspan2{
+  padding-left: 2px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.alreadyhave2{
+  padding-left: 13%;
+}

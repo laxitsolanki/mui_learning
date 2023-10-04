@@ -49,6 +49,8 @@ const Login = () => {
       })
       .then((response) => {
         console.log(response.data);
+        localStorage.setItem("access_token", response.data.payload.jwtToken);
+        localStorage.setItem("refreshToken", response.data.payload.refreshToken);
       });
   };
 

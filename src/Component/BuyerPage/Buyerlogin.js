@@ -384,7 +384,7 @@ const Buyerlogin = () => {
 
           <div>
             <div className="buttonbuyer">
-            <Link to="/mainbuyer1" target="_blank">
+            <Link to="/mainbuyer1" target="">
               <button className="buttoncs">Next</button>
               </Link>
               <div>

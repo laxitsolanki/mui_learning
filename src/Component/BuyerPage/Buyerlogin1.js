@@ -1,10 +1,11 @@
-import React from 'react'
+// import React from 'react'
 import "../../Component/BuyerPage/Buyerlogin1.css";
-import backgroundimg2  from "../../Asest/backgroundbuyer2.png";
+import backgroundimg2 from "../../Asest/backgroundbuyer2.png";
 import logobuyer from "../../Asest/Mask group.png";
 import call from "../../Asest/Call.png";
 import mesg from "../../Asest/Message.png";
 import look from "../../Asest/Lock.png";
+import trade from "../../Asest/trade.png";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -15,7 +16,26 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Checkbox from "@mui/material/Checkbox";
+import { Link } from "react-router-dom";
+import React, { useRef } from "react";
+
 const Buyerlogin1 = () => {
+  const fileInputRef = useRef(null);
+
+  const handleImageClick = () => {
+    // Trigger the click event of the hidden file input
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      console.log(`Selected file: ${selectedFile.name}`);
+      // You can perform further actions with the selected file here
+    }
+  };
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
   const [showPassword, setShowPassword] = React.useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -27,8 +47,8 @@ const Buyerlogin1 = () => {
 
   return (
     <>
-      <div className='mainbuyer2'>
-      <div className="backgroundlogin2" >
+      <div className="mainbuyer2">
+        <div className="backgroundlogin2">
           <div className="backgroundtext2">
             <p style={{ width: "70%" }}>
               Doing business in middle east made easy
@@ -36,8 +56,8 @@ const Buyerlogin1 = () => {
           </div>
           <img src={backgroundimg2} alt="login1" className="imagelogin2" />
         </div>
-        <div className='mainbuyerstep2'>
-        <div className="mainlogostep-2">
+        <div className="mainbuyerstep2">
+          <div className="mainlogostep-2">
             <img src={logobuyer} alt="logobuyer" />
             <div className="buyer-serviceprovide2">
               <p>Ecommerce</p>
@@ -53,7 +73,7 @@ const Buyerlogin1 = () => {
             </div>
             <div className="mainradio-button2">
               <FormControl>
-                <RadioGroup   
+                <RadioGroup
                   row
                   aria-labelledby="demo-row-radio-buttons-group-label"
                   name="row-radio-buttons-group"
@@ -75,7 +95,7 @@ const Buyerlogin1 = () => {
             </div>
           </div>
           <div className="maininput-form">
-          <div>
+            <div>
               <div className="buyerbussinessname-input2">Business Details</div>
               <div className="buyerbussinesinput-type">
                 <Box sx={{ "& > :not(style)": { mt: 3 } }}>
@@ -96,57 +116,183 @@ const Buyerlogin1 = () => {
                   />
                 </Box>
                 <Box sx={{ "& > :not(style)": { mt: 3 } }}>
-              <TextField
-                className="inputtypemain"
-                id="input-with-icon-textfield"
-                placeholder="Email address"
-                name="text"
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <img src={mesg} alt="msg"></img>
-                      <span class="vl"></span>
-                    </InputAdornment>
-                  ),
-                }}
-                variant="standard"
-              />
-              <br />
-              <TextField
-                className="inputtypemain"
-                id="standard-password-input"
-                type={showPassword ? "text" : "password"}
-                placeholder="Password"
-                name="text"
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <img src={look} alt="msg"></img>
-                      <span class="vl"></span>
-                    </InputAdornment>
-                  ),
-                  endAdornment: (
-                    <IconButton
-                      aria-label="toggle password visibility"
-                      onClick={handleClickShowPassword}
-                      onMouseDown={handleMouseDownPassword}
-                      edge="end"
-                    >
-                      {showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                  ),
-                }}
-                variant="standard"
-              />
-            </Box>
+                  <TextField
+                    className="inputtypemain"
+                    id="input-with-icon-textfield"
+                    placeholder="Email address"
+                    name="text"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={mesg} alt="msg"></img>
+                          <span class="vl"></span>
+                        </InputAdornment>
+                      ),
+                    }}
+                    variant="standard"
+                  />
+                  <br />
+                  <TextField
+                    className="inputtypemain"
+                    id="standard-password-input"
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Password"
+                    name="text"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={look} alt="msg"></img>
+                          <span class="vl"></span>
+                        </InputAdornment>
+                      ),
+                      endAdornment: (
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      ),
+                    }}
+                    variant="standard"
+                  />
+                  <TextField
+                    className="inputtypemain"
+                    id="input-with-icon-textfield"
+                    placeholder="Confirm Password"
+                    name="text"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={look} alt="msg"></img>
+                          <span class="vl"></span>
+                        </InputAdornment>
+                      ),
+                    }}
+                    variant="standard"
+                  />
+                  <TextField
+                    className="inputtypemain"
+                    id="input-with-icon-textfield"
+                    placeholder="Trade license number (Optional)"
+                    name="text"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={trade} alt="msg"></img>
+                          <span class="vl"></span>
+                        </InputAdornment>
+                      ),
+                    }}
+                    variant="standard"
+                  />
+                  <TextField
+                    className="inputtypemain"
+                    id="input-with-icon-textfield"
+                    placeholder="Trade license expiry date (Optional)"
+                    name="text"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <img src={trade} alt="msg"></img>
+                          <span class="vl"></span>
+                        </InputAdornment>
+                      ),
+                    }}
+                    variant="standard"
+                  />
+                </Box>
+                <div className="mybussiness">
+                  My business is not eligible for a VAT Certificate.
+                  <Checkbox
+                    {...label}
+                    defaultChecked
+                    style={{ color: "#DC4326", marginLeft: "5%" }}
+                  />
+                </div>
               </div>
             </div>
+            <TextField
+              className="inputtypemain"
+              id="input-with-icon-textfield"
+              placeholder="VAT/TAX Reg Number (Optional)"
+              name="text"
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <img src={trade} alt="msg"></img>
+                    <span class="vl"></span>
+                  </InputAdornment>
+                ),
+              }}
+              variant="standard"
+            />
+            <div>
+              <div className="choseop">
+                Upload document (CR Copy / Trade license copy/GST)
+                <br />
+                (Optional)
+              </div>
+              <div className="clickable-image">
+                <img
+                  src={require("../../Asest/file.png")} // Replace with your image URL
+                  alt="Click me"
+                  onClick={handleImageClick}
+                />
+                <input
+                  type="file"
+                  accept=".jpg, .jpeg, .png, .gif" // Specify the allowed file types
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
+              </div>
+              <div className="choseop">
+                Upload document(Vat Certification/Tax Certification)
+                <br />
+                (Optional)
+              </div>
+              <div className="clickable-image">
+                <img
+                  src={require("../../Asest/file.png")} // Replace with your image URL
+                  alt="Click me"
+                  onClick={handleImageClick}
+                />
+                <input
+                  type="file"
+                  accept=".jpg, .jpeg, .png, .gif" // Specify the allowed file types
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
 
+              </div>
+                <Checkbox {...label} defaultChecked style={{ marginLeft:"5px"}} />
+                <span className="already1">Agree to user</span>
+          <Link to="/Buyear2" className="create">
+          Terms & Conditions and &nbsp;&nbsp;Privacy Policy
+          </Link>
+          <Link to="/Seller">
+<button className='buttonbuyer'>create now</button>
+      </Link>
+      <div className="loginspan2">
+      <div className='ittakesbuyer'>(It takes 2 days to verify your profile)</div>
+<div className="alreadyhave2">
+<span className="alreadybuyer">Already have an Account?
+    <Link to="/Seller" className="create">
+    Login
+    </Link>
+    </span>
+    </div>
+    </div>
+            </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Buyerlogin1
+export default Buyerlogin1;
