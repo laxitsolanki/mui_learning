@@ -1,5 +1,4 @@
-// import React from 'react'
-import "../../Component/BuyerPage/Buyerlogin1.css";
+import "../../Component/Sellerpage/Seller2.css";
 import backgroundimg2 from "../../Asest/backgroundbuyer2.png";
 import logobuyer from "../../Asest/Mask group.png";
 import call from "../../Asest/Call.png";
@@ -21,8 +20,7 @@ import Checkbox from "@mui/material/Checkbox";
 import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import { Button } from "@mui/material";
-
-const Buyerlogin1 = () => {
+const Seller2 = () => {
   const fileInputRef = useRef(null);
 
   const handleImageClick = () => {
@@ -47,7 +45,7 @@ const Buyerlogin1 = () => {
     event.preventDefault();
   };
 // 
-const [isBuyerClicked, setIsBuyerClicked] = useState(true);
+const [isBuyerClicked, setIsBuyerClicked] = useState(false);
 
 const toggleBuyerClick = () => {
   setIsBuyerClicked(!isBuyerClicked);
@@ -80,7 +78,7 @@ const sellerButtonStyle = {
 };
   return (
     <>
-      <div className="mainbuyer2">
+     <div className="mainbuyer2">
         <div className="backgroundlogin2">
           <div className="backgroundtext2">
             <p style={{ width: "70%" }}>
@@ -394,10 +392,9 @@ const sellerButtonStyle = {
             </div>
           </div>
         </div>
-      </div>
-      {/* </div> */}
+      </div>  
     </>
-  );
-};
+  )
+}
 
-export default Buyerlogin1;
+export default Seller2

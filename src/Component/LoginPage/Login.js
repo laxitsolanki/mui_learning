@@ -25,7 +25,7 @@ const Login = () => {
   ) => {
     event.preventDefault();
   };
-
+// api call
    const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
 
@@ -38,14 +38,10 @@ const Login = () => {
   const submithandler = () => {
     console.log(phoneNumber, password); 
     axios
-      .post("http://3.28.4.129:4000/users/authenticate", {
-        countryCode: "+91",
-        phoneNumber: phoneNumber,
-        password: password,
-        device_type: "android",
-        push_token:
-          "co7zkgRDSfySbp4XmeWhK0:APA91bGFpkw3btVRdn3z6pOGY3lp43uVwmx5UE0sCNWqFS3PTK8yQTlHdULDeURM_LraWvo7M",
-        device_id: "test1",
+      .post("http://192.168.29.171:4000/users/login", {
+
+        email: phoneNumber,
+        password : password,
       })
       .then((response) => {
         console.log(response.data);

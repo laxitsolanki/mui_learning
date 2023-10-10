@@ -1,21 +1,21 @@
-.mainbuyer {
+.mainseller {
   /* main div  */
   display: flex;
 }
 
 /* step-1 css  */
 
-.buyerimage {
+.sellerimage {
   /* image buyer */
   position: relative;
   width: 55%;
 }
-.buyerbackground-image {
+.buyerbackground-imageseller {
   /* .background-image buyer */
   height: 100%;
   width: 100%;
 }
-.buyertext {
+.sellertext {
   /* text buyer */
   display: flex;
   position: absolute;
@@ -33,7 +33,7 @@
 }
 
 /*step-2 css  */
-.maindivstep-1 {
+.maindivstep-1seller {
   display: block;
   margin: 15px 0 0 10px;
   padding: 7% 0px 0 3%;
@@ -42,18 +42,18 @@
   /* justify-content: center; */
   align-items: center;
 }
-.buyer-serviceprovide {
+.seller-serviceprovide {
   display: flex;
   gap: 15px;
 }
-.mainlogostep-1 {
+.mainlogostep-1seller {
   padding-left: 8%;
 }
 /* step-text and check box */
-.mainradio-button{
-    padding-top: 4%;
+.mainradio-buttonseller {
+  padding-top: 4%;
 }
-.buyer-divteg1 {
+.seller-divteg1 {
   color: var(--Yellow-Color, #00394d);
   font-family: "Open Sans";
   font-size: 24px;
@@ -63,7 +63,7 @@
   padding-top: 3%;
   padding-right: 42;
 }
-.buyer-divteg20 {
+.seller-divteg2 {
   color: #6a6a6a;
   font-family: "Open Sans";
   font-size: 18px;
@@ -71,7 +71,7 @@
   font-weight: 500;
   line-height: normal;
 }
-.buyer-radio-buttons {
+.seller-radio-buttons {
   border-radius: 15px;
   border: 1px solid #dc4326;
   background: #f3e4e1;
@@ -79,52 +79,52 @@
   height: 48px;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05);
 }
-.seller-radio-buttons {
+.seller1-radio-buttons {
   width: 213px;
   height: 48px;
   border-radius: 15px;
   border: 1px solid #dfdfdf;
   background: #fff;
 }
-.buyerbussinessname-input{
-    padding-top: 2%;
-    color: var(--Yellow-Color, #00394D);
-font-family: Open Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 22px; /* 137.5% */
+.sellerbussinessname-input {
+  padding-top: 2%;
+  color: var(--Yellow-Color, #00394d);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
 }
-.line-input {
-    border-right: 2px solid#DFDFDF;
-    padding-left: 8px;
-    width: 3px;
-    height: 20px;
-  }
-.inputtextfield-business{
-    width: 436px;
-    height: 0.9px;
+.line-inputseller {
+  border-right: 2px solid#DFDFDF;
+  padding-left: 8px;
+  width: 3px;
+  height: 20px;
 }
-.buyerpersonal{
-  color: var(--Yellow-Color, #00394D);
-font-family: Open Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 22px; /* 137.5% */
+.inputtextfield-businessseller {
+  width: 436px;
+  height: 0.9px;
 }
-.mainbuyerpersonal{
+.sellerpersonal {
+  color: var(--Yellow-Color, #00394d);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 137.5% */
+}
+.mainsellerpersonal {
   padding-top: 20px;
 }
-.inputnumber-main{
+.inputnumber-mainseller {
   display: flex;
   outline: none;
 }
-.iconphone{
+.iconphone {
   height: 20%;
   padding-top: 15px;
 }
-.inputnumber{
+.inputnumber {
   /* padding: 12px 20px; */
   /* margin: 8px 0; */
   box-sizing: border-box;
@@ -135,22 +135,26 @@ line-height: 22px; /* 137.5% */
   /* background-color: green; */
   border: none;
 }
-.number{
+.number {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 2px solid  #DFDFDF;
-  
+  border-bottom: 2px solid #dfdfdf;
+
   width: 47%;
   outline: none;
 }
-.buttonbuyer{
-  margin: 50px 10px  0 90px;
-
+.buttonseller {
+  margin: 50px 10px 0 90px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
-.buttoncs {
+.buttoncseller {
   /* margin-left: 14%; */
+  text-decoration: none;
   cursor: pointer;
   margin-bottom: 5%;
   background-color: #dc4326;
@@ -174,8 +178,15 @@ line-height: 22px; /* 137.5% */
   font-weight: 700;
   line-height: 22px; /* 122.222% */
 }
-.logingestbuyer {
-  
+.mainradio-button2 {
+  display: flex;
+  width: 100%;
+  /* background-color: red; */
+}
+.create1 {
+  width: 50%;
+}
+.logingestseller {
   text-decoration: none;
   color: #969696;
   text-align: right;
@@ -186,81 +197,79 @@ line-height: 22px; /* 137.5% */
   line-height: 22px; /* 157.143% */
   /* margin-left: 5%; */
 }
-.loginasbuyer {
+.loginaseller {
   color: #dc4326;
   /* margin-top: 50px; */
 }
-@media (max-width: 900px)  {
-  .mainbuyer {
-    display: block;
-  }
-  .buyerimage {
+@media (max-width: 900px) {
+  .mainseller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
-  .maindivstep-1{
+  .sellerimage {
+    width: 100%;
+  }
+  .maindivstep-10 {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .buyer-radio-buttons{
+  .seller-radio-buttons {
     width: 213px;
     height: 48px;
   }
-  .seller-radio-buttons{
+  .seller1-radio-buttons {
     width: 213px;
     height: 48px;
   }
-  .buttonbuyer{
-margin-right: 130px;
+  .buttonseller {
+    margin-right: 130px;
   }
-
 }
-@media (max-width: 464px)  { 
-  .mainbuyer {
+@media (max-width: 464px) {
+  .mainseller {
+    width: 100%;
     display: block;
   }
-  .buyerimage {
+  .sellerimage {
     width: 100%;
   }
-  .maindivstep-1{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 
-  }
-  .maindivstep-1 {
-    display: block;
+  .maindivstep-10 {
+    display: flex;
     /* margin: 20px 0 0 10px; */
-    /* padding: 10% 0px 0 7%; */
+    padding: 10%  0 0  7%;
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-@media (max-width: 390px)  { 
-  .mainbuyer {
+@media (max-width: 390px) {
+  .mainseller {
     display: block;
-  }
-  .buyerimage {
     width: 100%;
   }
-  .maindivstep-1{
+  .sellerimage {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+  }
 
-  }
-  .maindivstep-1 {
+  /* .maindivstep-10 {
     display: block;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  } */
+  .mainradio-button2 {
+    display: flex;
+    width: 100%;
   }
+ 
 }
-
