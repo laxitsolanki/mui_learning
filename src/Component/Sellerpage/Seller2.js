@@ -372,7 +372,7 @@ const sellerButtonStyle = {
                 Terms & Conditions and &nbsp;&nbsp;Privacy Policy
               </Link>
 
-              <Link to="/mainseller1">
+              <Link to="/otp">
                 <button className="buttonbuyer">create now</button>
               </Link>
               <div className="loginspan2">

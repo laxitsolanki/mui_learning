@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  width: 100%;
+}
+.imgotpmain {
+  position: relative;
+  width: 50%;
+  height: 700px;
+  flex-shrink: 0;
+}
+.Otptext {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  color: var(--C-4, #fff);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  padding-top: 10%;
+}
+.background-imageOtp {
+  /* .background-image buyer */
+  height: 100%;
+  width: 100%;
+}
+/* part one complet */
+.main-2 {
+  /* background-color: aqua; */
+  width: 50%;
+}
+.main2-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.otpphone {
+  padding-top: 80px;
+}
+.main2-2 {
+  padding-top: 20px;
+  color: var(--Yellow-Color, #00394d);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.numberotp {
+  padding-left: 10px;
+  color: #282829;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.inputfield {
+  width: 50%; /* Adjust the width as needed to fit 6 input fields */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.otpinput {
+  width: 10px;
+}
+.buttonotp {
+  cursor: pointer;
+  background-color: #dc4326;
+  width: 267px;
+  height: 55px;
+  border-radius: 5%;
+  margin-top: 5%;
+  /* margin-left: 1%; */
+  font-size: larger;
+  color: #fff;
+}
+.resentotp {
+  padding-top: 30px;
+  color: #6a6a6a;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+}
+@media (max-width: 900px) {
+  .main {
+    display: block;
+    width: 100%;
+  }
+  .imgotpmain {
+    width: 100%;
+  }
+  .main-2 {
+    /* background-color: aqua; */
+    width: 100%;
+  }
+}
